@@ -1,5 +1,7 @@
 import com.digitalcastaway.biblioteca.Biblioteca;
+import com.digitalcastaway.biblioteca.Catalogo;
 import com.digitalcastaway.biblioteca.Persona;
+import com.digitalcastaway.biblioteca.Usuario;
 
 import java.util.Scanner;
 
@@ -37,7 +39,7 @@ public class Main {
                     System.out.println("Seleccione uno de los libros");
                     biblio.showCatalog();
                     int posicion = sc.nextInt();
-                    usuario.obtenerLibro(posicion, biblio);
+                        usuario.obtenerLibro(posicion, biblio);
                     break;
                 case "3":
                     System.out.println("Obteniendo libro aleatorio");
@@ -57,7 +59,6 @@ public class Main {
                     break;
                 case "Q":
                     salir = true;
-
             }
         }
     }
